@@ -1,0 +1,63 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility-class.css">
+</head>
+
+<body>
+  <h1 class="text-center">Calculator</h1>
+  <div class="container">
+    <div class="Calculator flex flex-col flex-center">
+      <div class="row">
+        <input type="text" name="input" id="input-box">
+      </div>
+      <div class="row">
+        <button class="btn grey zero-btn">C</button>
+        <button class="btn grey">%</button>
+        <button class="btn orange">/</button>
+      </div>
+      <div class="row">
+        <button class="btn dark-grey">7</button>
+        <button class="btn dark-grey">8</button>
+        <button class="btn dark-grey">9</button>
+        <button class="btn orange">*</button>
+      </div>
+      <div class="row">
+        <button class="btn dark-grey ">4</button>
+        <button class="btn dark-grey">5</button>
+        <button class="btn dark-grey">6</button>
+        <button class="btn orange">-</button>
+      </div>
+      <div class="row">
+        <button class="btn dark-grey">1</button>
+        <button class="btn dark-grey">2</button>
+        <button class="btn dark-grey">3</button>
+        <button class="btn orange">+</button>
+      </div>
+      <div class="row">
+        <button class="btn dark-grey zero-btn">0</button>
+        <button class="btn dark-grey">.</button>
+        <button class="btn orange">=</button>
+      </div>
+
+    </div>
+  </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://bit.ly/codedamn-web-console"></script>
+    <script src="script.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".container"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+</body>
+
+</html>
